@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background: url("HomeWallpaper.jpg");
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+.nav-area{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 732px;
+height: 35px;
+left: 543px;
+top: 29px;
+
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+}
+.nav-area li a:hover{
+
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+    position: absolute;
+    left: 89.58%;
+    right: 1.46%;
+    top: 1.46%;
+    bottom: 93.55%;
+    
+    background: #4E393C;
+    border-radius: 5px;
+}
+.profile{
+    position: absolute;
+width: 3px;
+height: 3px;
+left: 900px;
+top: 100px;
+
+background: url(2F4B1857.jpg);
+}
+.welcome{
+    position: absolute;
+width: 610px;
+height: 255px;
+left: 454px;
+top: 229px;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 35px;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+}
+.logo{
+    position: absolute;
+left: 1.53%;
+right: 81.11%;
+top: 0.68%;
+bottom: 91.02%;
+}
+.login a{
+    position: static;
+width: 97px;
+height: 35px;
+left: 16px;
+top: 8px;
+
+    font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
+}
