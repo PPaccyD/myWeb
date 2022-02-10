@@ -6,14 +6,13 @@
     width: 1170px;
     margin: auto;
 }
-header{
-    background: url("HomeWallpaper.jpg");
-    height: 100vh;
-    -webkit-background-size:cover;
+body{
+    background-image: url("HomeWallpaper.jpg");
     background-size: cover;
-    background-position: center center;
+    background-size: 1600px 800px ;
     position: relative;
-
+    width: 1440px;
+    height: 1024px;
 }
 .nav-area{
     display: flex;
@@ -29,7 +28,9 @@ top: 29px;
 
 }
 .nav-area li{
-    display: inline-block;
+    display: block;
+    padding: 10px;
+
 }
 .nav-area li a{
     font-family: Work Sans;
@@ -39,19 +40,17 @@ font-size: 30px;
 line-height: 35px;
 text-align: center;
 letter-spacing: -0.02em;
+text-decoration: none;
 
 color: #000000;
 
 }
-.nav-area li a:hover{
-
-}
 .login{
-    display: flex;
+    display:block;
     flex-direction: row;
     align-items: flex-start;
-    padding: 8px 16px;
-    text-decoration: none;
+    padding: 8px 20px;
+    text-decoration:none;
     
     position: absolute;
     left: 89.58%;
@@ -61,20 +60,24 @@ color: #000000;
     
     background: #4E393C;
     border-radius: 5px;
+
+    list-style-type: none;
+    text-align: center;
+
 }
 .profile{
     position: absolute;
-width: 3px;
-height: 3px;
-left: 900px;
-top: 100px;
+width: 292px;
+height: 255px;
+left: 1086px;
+top: 229px;
 
 background: url(2F4B1857.jpg);
 }
 .welcome{
     position: absolute;
 width: 610px;
-height: 255px;
+height: 260px;
 left: 454px;
 top: 229px;
 
@@ -84,16 +87,26 @@ font-weight: 300;
 font-size: 30px;
 line-height: 35px;
 letter-spacing: -0.02em;
+text-align: center;
 
 color: #000000;
 
 }
 .logo{
     position: absolute;
-left: 1.53%;
-right: 81.11%;
-top: 0.68%;
-bottom: 91.02%;
+left: 0.15%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: Work Sans;
+font-style: italic;
+font-weight: 800;
+font-size: 40px;
+line-height: 76px;
+letter-spacing: -0.02em;
+
+color: #000000;
 }
 .login a{
     position: static;
@@ -116,4 +129,20 @@ flex: none;
 order: 0;
 flex-grow: 0;
 margin: 0px 10px;
+}
+.nav-area li a:hover{
+    background: #4E393C;
+    color: beige ;
+}
+.copyright{
+
+        display: flex;
+        justify-content:start;
+      
+}
+.socialm{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    margin:center
 }
