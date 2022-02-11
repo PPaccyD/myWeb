@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Work Sans;
-    background-image: url("loginwallpaper.jpg");
+    background-image: url("loginwallpaper01.jpg");
     background-size: cover;
     background-size: 1600px 800px ;
     height: 100vh;
@@ -10,10 +10,11 @@ body{
 }
 .center{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 390;
+    width: 390px;
+    height: 550px;
     background: #C1BDBD;
     border-radius: 0;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
@@ -108,4 +109,97 @@ input[type="submit"]:hover{
 .signup_link a:hover{
     text-decoration: underline;
     color: #000000;
+}
+.login{
+    display:block;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 20px;
+    text-decoration:none;
+    
+    position: absolute;
+    left: 89.58%;
+    right: 1.46%;
+    top: 1.46%;
+    bottom: 93.55%;
+    
+    background: #4E393C;
+    border-radius: 5px;
+
+    list-style-type: none;
+    text-align: center;
+
+}
+.nav-area{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 732px;
+height: 35px;
+left: 543px;
+top: 29px;
+
+}
+.nav-area li{
+    display: block;
+    padding: 10px;
+
+}
+.nav-area li a{
+    font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+letter-spacing: -0.02em;
+text-decoration: none;
+
+color: #000000;
+
+}
+.logo{
+    position:fixed;
+left: 19px;
+right: 0px;
+top: 0px;
+bottom: 85px;
+
+font-family: Work Sans;
+font-style: italic;
+font-weight: 800;
+font-size: 40px;
+line-height: 76px;
+letter-spacing: -0.02em;
+
+color: #000000;
+}
+.login a{
+    position: static;
+width: 97px;
+height: 35px;
+left: 16px;
+top: 8px;
+
+    font-family: Work Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 10px;
+}
+.nav-area li a:hover{
+    background: #4E393C;
+    color: beige ;
 }
