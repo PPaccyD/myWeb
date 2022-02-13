@@ -7,12 +7,14 @@
     margin: auto;
 }
 body{
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans;
     background-image: url("HomeWallpaper.jpg");
     background-size: cover;
     background-size: 1600px 800px ;
-    position: relative;
-    width: 1440px;
-    height: 1024px;
+    height: 100vh;
+    overflow: hidden;
 }
 .nav-area{
     display: flex;
