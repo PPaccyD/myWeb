@@ -1,150 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .wrapper{
-    width: 1170px;
-    margin: auto;
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Work Sans;
-    background-image: url("HomeWallpaper.jpg");
-    background-size: cover;
-    background-size: 1600px 800px ;
-    height: 100vh;
-    overflow: hidden;
-}
-.nav-area{
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-
-position: absolute;
-width: 732px;
-height: 35px;
-left: 543px;
-top: 29px;
-
-}
-.nav-area li{
-    display: block;
-    padding: 10px;
-
-}
-.nav-area li a{
-    font-family: Work Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
-letter-spacing: -0.02em;
-text-decoration: none;
-
-color: #000000;
-
-}
-.login{
-    display:block;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px 20px;
-    text-decoration:none;
-    
-    position: absolute;
-    left: 89.58%;
-    right: 1.46%;
-    top: 1.46%;
-    bottom: 93.55%;
-    
-    background: #4E393C;
-    border-radius: 5px;
-
-    list-style-type: none;
-    text-align: center;
-
-}
-.profile{
-    position: absolute;
-width: 292px;
-height: 255px;
-left: 1086px;
-top: 229px;
-
-background: url(2F4B1857.jpg);
-}
-.welcome{
-    position: absolute;
-width: 610px;
-height: 260px;
-left: 454px;
-top: 229px;
-
-font-family: Work Sans;
-font-style: normal;
-font-weight: 300;
-font-size: 30px;
-line-height: 35px;
-letter-spacing: -0.02em;
-text-align: center;
-
-color: #000000;
+ display: flex;
+ position: relative;
+ padding: 20px;
 
 }
 .logo{
+    width: 20%;
+}
+.logo h1 span{
+    text-transform: uppercase;
+}
+.wrapper ul{
+    width: 50%;
+    list-style: none;
+    /*background: blue;*/
     position: absolute;
-left: 0.15%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-font-family: Work Sans;
-font-style: italic;
-font-weight: 800;
-font-size: 40px;
-line-height: 76px;
-letter-spacing: -0.02em;
-
-color: #000000;
+    left: 750px;
+    align-items: center;
+   }
+.wrapper ul li{
+    display: inline;
+    /*margin-right: 40px;*/
+    margin-left: 50px;
+   }
+   .wrapper ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+   }
+   .wrapper ul li button{
+       border-style: none;
+       background-color: #4E393C;
+       width: 100px;
+       padding: 10px;
+       border-radius: 3px;
+       cursor: pointer;
+       color: #C4C4C4;
+       transform: translateY(-6px);
+   }
+   .header{
+       /*align-items: center;*/
+     height: 100vh;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.123),rgba(0, 0, 0, 0.157)), url("https://cdn.pixabay.com/photo/2016/05/08/14/58/icon-1379228_960_720.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+   }
+   .welcome{
+       display: flex;
+       padding: 100px;
+       position: relative;
+   }
+   .welcome .message{
+    width: 50%;
+    margin-top: 150px;
 }
-.login a{
-    position: static;
-width: 97px;
-height: 35px;
-left: 16px;
-top: 8px;
-
-    font-family: Work Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
-letter-spacing: -0.02em;
-
-color: #000000;
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 10px;
+.welcome .profile{
+    width: 50%;
+    width: 400px;
+    height: 400px;
+    
 }
-.nav-area li a:hover{
-    background: #4E393C;
-    color: beige ;
+.welcome .profile img{
+    width: 300px;
+    height: 300px;
+    margin-left: 330px;
+    border-radius: 200px;
+    margin-top: 60px;
 }
-.copyright{
-
-        display: flex;
-        justify-content:start;
-      
+.welcome .message p{
+    font-size: 30px;
+    font-weight: 700;
+    /*line-height: 10px;*/
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 5px;
+    border-radius: 5px;
+}  
+.welcome .message a{
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 60px;
+    display: block;
+    background-color: #4E393C;
+    border-radius: 100px;
+    text-decoration: none;
+    padding: 10px;
+    width: 200px;
+    color: #C4C4C4;
+    text-align: center;
 }
 .socialm{
-    display: flex;
-    justify-content: center;
-    align-items: center
-    margin:center
+    /*background-color: blue;*/
+    margin-top: 60px;
+    text-align: center;
+}
+.icons .iconify{
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.socialm p{
+    margin:10px 0px;
+    font-size: 20px;
+    font-weight: 600;
 }

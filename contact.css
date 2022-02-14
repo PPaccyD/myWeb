@@ -7,21 +7,23 @@
 .contact
 {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url(loginwallpaper01.jpg);
-    background-size: cover;
+    /*background-color: #fff;*/
+    /*background-size: cover;*/
+
 }
 .contact .content
 {
     max-width: 800px;
     text-align: center;
+    /*background-color: blue;*/
 }
-.content .content .h2
+.contact .content .h1
 {
     font-size: 36px;
     font-weight: 500;
@@ -30,10 +32,12 @@
 .container
 {
     width: 100%;
-    display:flex;
-    justify-content: content;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    /*justify-content: content;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 5px;*/
+    /*background-color: green;*/
 }
 .container .contactInfo
 {
@@ -74,15 +78,17 @@
 }
 .contactForm
 {
-    width: 40%;
-    padding: 40%;
+    width: 100%;
+    padding: 20px 0;
     background: none;
+    /*background-color: red;*/
 }
 .contactForm h2
 {
    font-size: 30px;
     color: #000000;
     font-weight: 300;
+    text-align: center;
 }
 .contactForm .inputBox
 {
@@ -101,6 +107,7 @@
     border-bottom: 2px solid #000000;
     outline: none;
     resize:none;
+    /*border: 1px rgb(175, 0, 0) solid;*/
 }
 .contactForm .inputBox span
 {
@@ -112,6 +119,7 @@
     pointer-events: none;
     transition: .5s;
     color: #666;
+    /*border: 1px green solid;*/
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
@@ -119,9 +127,11 @@
 .contactForm .inputBox textarea:valid ~ span
 
 {
-    color: blue;
-    font-size: 12px;
-    transform: translateY(-20px);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 500;
+    transform: translateY(-25px);
+    margin-bottom: 100px;
 }
 .contactForm .inputBox input[type="submit"]
 {
@@ -132,8 +142,9 @@
     cursor: pointer;
     padding: 10px;
     font-size: 25px;
+    align-content: center;
 }
-@media (max-width:991px) 
+/*@media (max-width:991px) 
 {
     .contact{
              padding: 50px;
@@ -150,4 +161,4 @@
     {
         width: 100%;
     }
-}
+}*/
