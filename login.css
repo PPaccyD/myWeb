@@ -1,16 +1,23 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: Work Sans;
-    background-image: url("loginwallpaper01.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.001),rgba(0, 0, 0, 0.767)),url("loginwallpaper01.jpg");
     background-size: cover;
-    background-size: 1600px 800px ;
+    background-position: center;
     height: 100vh;
     overflow: hidden;
 }
 .center{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 390px;
@@ -110,96 +117,49 @@ input[type="submit"]:hover{
     text-decoration: underline;
     color: #000000;
 }
-.login{
-    display:block;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px 20px;
-    text-decoration:none;
-    
-    position: absolute;
-    left: 89.58%;
-    right: 1.46%;
-    top: 1.46%;
-    bottom: 93.55%;
-    
-    background: #4E393C;
-    border-radius: 5px;
-
-    list-style-type: none;
-    text-align: center;
-
-}
-.nav-area{
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-
-position: absolute;
-width: 732px;
-height: 35px;
-left: 543px;
-top: 29px;
-
-}
-.nav-area li{
-    display: block;
-    padding: 10px;
-
-}
-.nav-area li a{
-    font-family: Work Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
-letter-spacing: -0.02em;
-text-decoration: none;
-
-color: #000000;
+.wrapper{
+ display: flex;
+ position: relative;
+ padding: 20px;
 
 }
 .logo{
-    position:fixed;
-left: 19px;
-right: 0px;
-top: 0px;
-bottom: 85px;
-
-font-family: Work Sans;
-font-style: italic;
-font-weight: 800;
-font-size: 40px;
-line-height: 76px;
-letter-spacing: -0.02em;
-
-color: #000000;
+    width: 20%;
 }
-.login a{
-    position: static;
-width: 97px;
-height: 35px;
-left: 16px;
-top: 8px;
-
-    font-family: Work Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
-letter-spacing: -0.02em;
-
-color: #000000;
-
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 10px;
+.logo h1 span{
+    text-transform: uppercase;
 }
-.nav-area li a:hover{
-    background: #4E393C;
-    color: beige ;
-}
+.wrapper ul{
+    width: 50%;
+    list-style: none;
+    /*background: blue;*/
+    position: absolute;
+    left: 750px;
+    align-items: center;
+   }
+.wrapper ul li{
+    display: inline;
+    /*margin-right: 40px;*/
+    margin-left: 50px;
+   }
+   .wrapper ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+   }
+   .wrapper ul li button{
+       border-style: none;
+       background-color: #4E393C;
+       width: 100px;
+       padding: 10.0px;
+       border-radius: 3px;
+       cursor: pointer;
+       color: #C4C4C4;
+       transform: translateY(-4px);
+       /*margin: 300px;*/
+       position: absolute;
+   }
+   h3{
+    position: absolute;
+    bottom: 0px;
+   }
