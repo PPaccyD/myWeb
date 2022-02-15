@@ -4,18 +4,15 @@
     box-sizing: border-box;
     font-family: Work Sans;
 }
-.contact
-{
-    position: relative;
-    min-height: 100%;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /*background-color: #fff;*/
-    /*background-size: cover;*/
-
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.001),rgba(0, 0, 0, 0.767)),url("loginwallpaper01.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
 }
 .contact .content
 {
@@ -79,7 +76,7 @@
 .contactForm
 {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 20px;
     background: none;
     /*background-color: red;*/
 }
@@ -144,6 +141,64 @@
     font-size: 25px;
     align-content: center;
 }
+.contact{
+    /*background-color: blue;*/
+    height: 550px;
+    width: 800px;
+    position: relative;
+    background: #C1BDBD;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.wrapper{
+    display: flex;
+    position: relative;
+    padding: 20px;
+   
+   }
+   .logo{
+       width: 20%;
+   }
+   .logo h1 span{
+       text-transform: uppercase;
+   }
+   .wrapper ul{
+       width: 50%;
+       list-style: none;
+       /*background: blue;*/
+       position: absolute;
+       left: 750px;
+       align-items: center;
+      }
+   .wrapper ul li{
+       display: inline;
+       /*margin-right: 40px;*/
+       margin-left: 50px;
+      }
+      .wrapper ul li a{
+       text-decoration: none;
+       font-size: 30px;
+       color: black;
+      }
+      .wrapper ul li button{
+          border-style: none;
+          background-color: #4E393C;
+          width: 100px;
+          padding: 10.0px;
+          border-radius: 3px;
+          cursor: pointer;
+          color: #C4C4C4;
+          transform: translateY(-4px);
+          /*margin: 300px;*/
+          position: absolute;
+      }
+h3{
+    position: absolute;
+    bottom: 0px;
+   }
 /*@media (max-width:991px) 
 {
     .contact{
