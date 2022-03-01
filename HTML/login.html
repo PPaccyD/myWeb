@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/CSS/login.css">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!-- <script src="/login.js"></script> -->
+
+</head>
+    <div class="wrapper">
+        <div class="logo">
+           <h1> <span>P</span>Paccy</h1>
+        </div>
+        <ul class="nav-area" >
+        <li><a href="/index.html">Home</a> </li>
+        <li><a href="/index.html">About Me</a> </li>  
+        <li><a href="/HTML/contact.html">Contact</a> </li> 
+        <li><a href="/HTML/blogpage.html">Blog</a></li>
+        <!-- <li><button onclick="location.href='login.html';" >Log In</button> </li> -->
+        </ul>
+        <span class="iconify" data-icon="icon-park:hamburger-button" data-width="25" data-height="25"></span>
+    </div>
+<header class="header">
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form class="login-form" method="post">
+            <div class="txt_field">
+                <input type="text" id="email" required>
+                <label for="Email">Email Address</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="password" required>
+                <label for="Password">Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login" onclick="/HTML/dashboard.html">
+            <div class="signup_link">
+             Or   <a href="#">Sign Up</a>
+            </div>
+        </form>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+     <script>
+         const form = document.querySelector('.login-form')
+         const firebaseConfig = {
+            apiKey: "AIzaSyBTr56eTT9xgJo9fshQC5Up98GpWGb8ydc",
+            authDomain: "myppaccy.firebaseapp.com",
+            projectId: "myppaccy",
+            storageBucket: "myppaccy.appspot.com",
+            messagingSenderId: "1091890647208",
+            appId: "1:1091890647208:web:3c55c4c91f9a1b7abdb29d"
+         };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+         const db = firebase.firestore();
+        
+         form.addEventListener('submit', (e)=>{
+             e.preventDefault()
+
+       
+        firebase.auth().signInWithEmailAndPassword(form.email.value, form.password.value)
+           .then((userCredential) => {
+            console.log("Logged In")
+            window.open("/HTML/messages.html")
+           })
+         .catch((error) => {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+         });
+        })
+     </script>
+    </div>
+    <footer>
+        <h3><span class="copyright">© Copyright</span>2022 PPaccy</h3>
+    </footer>
+</header>
+</body>
+</html>
