@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Work Sans;
+    box-sizing: content-box;
+}
+.art-cont .content
+{
+    max-width: 800px;
+    text-align: center;
+    /* background-color: blue; */
+}
+.art-cont .content .h1
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+}
+.art-cont{
+  background: whitesmoke;
+  height: auto;
+  width: 900px;
+  position: relative;
+  margin-top: 50px;
+  /* background: #C1BDBD; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+}
+p{
+  margin: 15px;
+}
+.commentForm
+{
+    width: 700px;
+    padding: 20px 100px;
+    background: none;
+    justify-content: center;
+    /*background-color: blue;*/
+    /*background-color: red;*/
+}
+.comment{
+  background-color: blue;
+  justify-content: center;
+}

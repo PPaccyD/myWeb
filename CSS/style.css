@@ -1,0 +1,150 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: Work Sans;
+}
+.wrapper{
+ display: flex;
+ position:relative;
+ padding: 10px;
+
+}
+.logo{
+    width: 20%;
+}
+.logo h1 span{
+    text-transform: uppercase;
+}
+.wrapper ul{
+    width: 50%;
+    list-style: none;
+    /*background: blue;*/
+    position: absolute;
+    left: 750px;
+    align-items: center;
+    font-weight: 600;
+   }
+.wrapper ul li{
+    display: inline;
+    /*margin-right: 40px;*/
+    margin-left: 50px;
+   }
+   .wrapper ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: darkblue;
+   }
+   .wrapper ul li button{
+       border-style: none;
+       background-color: #4E393C;
+       width: 100px;
+       padding: 10px;
+       border-radius: 3px;
+       cursor: pointer;
+       color: #C4C4C4;
+       font-weight: 200;
+       transform: translateY(-6px);
+       position: absolute;
+   }
+   .header{
+       /*align-items: center;*/
+     height: 100vh;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.001),rgba(0, 0, 0, 0.767)),url("/Photos/loginwallpaper01.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+   }
+   .welcome{
+       display: flex;
+       padding: 80px;
+       position: relative;
+   }
+   .welcome .message{
+    width: 50%;
+    margin-top: 90px;
+}
+.welcome .profile{
+    width: 50%;
+    width: 400px;
+    height: 400px;
+    
+}
+.welcome .profile img{
+    width: 300px;
+    height: 300px;
+    margin-left: 330px;
+    border-radius: 200px;
+    margin-top: 60px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.welcome .message p{
+    font-size: 30px;
+    font-weight: 700;
+    /*line-height: 10px;*/
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+}  
+.welcome .message a{
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 60px;
+    display: block;
+    background-color: #4E393C;
+    border-radius: 100px;
+    text-decoration: none;
+    padding: 10px;
+    width: 200px;
+    color: #C4C4C4;
+    text-align: center;
+}
+.socialm{
+    /*background-color: blue;*/
+    margin-top: 60px;
+    text-align: center;
+}
+.icons .iconify{
+    margin-right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.socialm p{
+    margin:10px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+@media only screen and (max-width: 700px) and (min-width: 320px) {
+    .welcome .profile img{
+        width: 70px;
+        height: 70px;
+        margin-left: 100px;
+        border-radius: 200px;
+        margin-top: 50px;
+        }
+           .welcome {
+            display: flex;
+        }
+    body{
+        height: 100%;
+        width: 480px;
+        display:contents;
+
+    }
+    .header{
+        /*align-items: center;*/
+      height: 100%;
+      width: 480px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.123),rgba(0, 0, 0, 0.157)), url("https://cdn.pixabay.com/photo/2016/05/08/14/58/icon-1379228_960_720.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /*background-position: center;*/
+      background-attachment: fixed;
+    } 
+}
